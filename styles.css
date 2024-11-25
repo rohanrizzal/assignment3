@@ -1,0 +1,82 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Header Styling */
+header {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 30px 0;
+    text-align: center;
+    margin-bottom: 30px;
+    border-radius: 0 0 20px 20px;
+}
+
+.quote-container h1 {
+    font-size: 3em; /* Increased size for the title */
+    margin: 0;
+}
+
+/* Ensure the quote is bold */
+.quote-container .quote {
+    font-size: 1.2em; /* Same font size as before */
+    font-style: italic;
+    margin-top: 10px;
+    font-weight: 700; /* Force the quote to be bold */
+}
+
+/* Form Styling */
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+
+fieldset {
+    margin: 10px 0;
+}
+
+legend {
+    font-weight: bold;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Order Summary Styling */
+#order-summary {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+
+#ingredients-images img {
+    width: 100px;
+    margin: 5px;
+}

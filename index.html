@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smoothie Order</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header Section with Quote -->
+    <header>
+        <div class="quote-container">
+            <h1>Your Smoothie</h1>
+            <p class="quote">"A smoothie a day keeps the doctor away!"</p>
+        </div>
+    </header>
+
+    <!-- Form to Order Smoothie -->
+    <form id="order-form">
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" required>
+        <br>
+
+        <fieldset>
+            <legend>Choose Size:</legend>
+            <input type="radio" name="size" value="Small" required> Small
+            <input type="radio" name="size" value="Medium" required> Medium
+            <input type="radio" name="size" value="Large" required> Large
+        </fieldset>
+        <br>
+
+        <fieldset>
+            <legend>Choose Base:</legend>
+            <input type="radio" name="base" value="Water" required> Water
+            <input type="radio" name="base" value="Almond Milk" required> Almond Milk
+            <input type="radio" name="base" value="Coconut Water" required> Coconut Water
+        </fieldset>
+        <br>
+
+        <fieldset>
+            <legend>Select Ingredients:</legend>
+            <input type="checkbox" class="ingredient" name="ingredients" value="Banana"> Banana
+            <input type="checkbox" class="ingredient" name="ingredients" value="Strawberry"> Strawberry
+            <input type="checkbox" class="ingredient" name="ingredients" value="Blueberry"> Blueberry
+            <input type="checkbox" class="ingredient" name="ingredients" value="Mango"> Mango
+            <input type="checkbox" class="ingredient" name="ingredients" value="Spinach"> Spinach
+        </fieldset>
+        <br>
+
+        <button type="submit">Order Smoothie</button>
+    </form>
+
+    <div id="order-summary" style="display:none;">
+        <h2>Order Summary</h2>
+        <p id="order-output"></p>
+        <p id="bill-output"></p>
+        <div id="ingredients-images"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
